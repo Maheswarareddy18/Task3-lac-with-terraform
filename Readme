@@ -1,0 +1,25 @@
+Provision a local Docker container using Terraform, demonstrating basic Infrastructure as Code (IaC) automation
+Tools Used:
+Terraform
+Docker
+Terraform Docker Provider
+main.tf – Terraform script to create a Docker container
+execution_logs.txt – Logs of the Terraform commands and output
+ Docker and Terraform are installed.
+Docker: https://docs.docker.com/get-docker/
+Terraform: https://developer.hashicorp.com/terraform/downloads
+This will download the Docker provider plugin.
+terraform init
+Terraform will do without making changes yet
+terraform plan
+terraform apply -auto-approve
+Pull the Nginx image
+Create a Docker container
+Map port 8080 (host) to port 80 (container)
+Visit: http://localhost:8080 in your browser.
+Destroy the Infrastructure
+terraform destroy -auto-approve
+This will delete the container and remove everything Terraform created.
+
+
+
