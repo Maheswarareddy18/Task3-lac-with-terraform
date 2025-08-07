@@ -1,0 +1,22 @@
+$ terraform init
+Initializing the backend...
+Initializing provider plugins...
+Terraform has been successfully initialized!
+
+$ terraform plan
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+$ terraform apply -auto-approve
+docker_image.nginx: Creating...
+docker_image.nginx: Creation complete
+docker_container.nginx: Creating...
+docker_container.nginx: Creation complete
+
+Apply complete! Resources: 2 added.
+
+$ terraform state list
+docker_image.nginx
+docker_container.nginx
+
+$ terraform destroy -auto-approve
+Destroy complete! Resources: 2 destroyed.
